@@ -1,0 +1,4 @@
+pandas
+mplsoccer
+StandardScaler
+plotly
