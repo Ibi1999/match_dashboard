@@ -53,19 +53,19 @@ with col1:
     
     with tabs[0]:  # Goals tab
         if home_team and away_team and home_team != away_team:
-            #st.write(f"🏠 **{home_team} Home Goal Distribution**")
+            st.write(f"🏠 **{home_team} Home Goal Distribution**")
             plot_home_goal_boxplot(match_statistics, home_team, away_team)
             st.pyplot(plt.gcf())
 
     with tabs[1]:  # xG tab
         if home_team and away_team and home_team != away_team:
-            #st.write(f"📊 **{home_team} Home xG Distribution**")
+            st.write(f"📊 **{home_team} Home xG Distribution**")
             plot_home_xG_boxplot(shots_normalised_df, match_statistics, home_team, away_team)
             st.pyplot(plt.gcf())
 
     with tabs[2]:  # Shots tab
         if home_team and away_team and home_team != away_team:
-            #st.write(f"🎯 **{home_team} Home Shots Distribution**")
+            st.write(f"🎯 **{home_team} Home Shots Distribution**")
             plot_home_shots_boxplot(shots_normalised_df, home_team, away_team)
             st.pyplot(plt.gcf())
 with col2:
@@ -78,19 +78,19 @@ with col3:
 
         with tabs[0]:  # Goals tab
             if home_team and away_team and home_team != away_team:
-                #st.write(f"🛫 **{away_team} Away Goal Distribution**")
+                st.write(f"🛫 **{away_team} Away Goal Distribution**")
                 plot_away_goal_boxplot(match_statistics, home_team, away_team)
                 st.pyplot(plt.gcf())
 
         with tabs[1]:  # xG tab
             if home_team and away_team and home_team != away_team:
-                #st.write(f"📊 **{away_team} Away xG Distribution**")
+                st.write(f"📊 **{away_team} Away xG Distribution**")
                 plot_away_xG_boxplot(shots_normalised_df, match_statistics, home_team, away_team)
                 st.pyplot(plt.gcf())
 
         with tabs[2]:  # Shots tab
             if home_team and away_team and home_team != away_team:
-                #st.write(f"🎯 **{away_team} Away Shots Distribution**")
+                st.write(f"🎯 **{away_team} Away Shots Distribution**")
                 plot_away_shots_boxplot(shots_normalised_df, home_team, away_team)
                 st.pyplot(plt.gcf())
         
