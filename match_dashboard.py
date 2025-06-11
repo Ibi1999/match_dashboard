@@ -5,6 +5,15 @@ import matplotlib.pyplot as plt
 
 st.set_page_config(layout="wide")
 
+# Load and display logo in the top-left
+from PIL import Image
+logo = Image.open("logo.png")
+
+col1, col2 = st.columns([1, 6])
+with col1:
+    st.image(logo, width=80)  # Adjust width as needed
+st.markdown("<small>Created by Ibrahim Oksuzoglu</small>", unsafe_allow_html=True)
+
 @st.cache_data
 def load_data():
     shots_normalised_df = pd.read_pickle('shots_normalised_df.pkl')
